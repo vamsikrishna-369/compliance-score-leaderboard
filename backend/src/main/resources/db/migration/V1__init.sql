@@ -6,3 +6,5 @@ CREATE TABLE compliance_record (
                                    status VARCHAR(50),
                                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+CREATE INDEX idx_compliance_title ON compliance_record(title);
+CREATE INDEX idx_compliance_status ON compliance_record(status);

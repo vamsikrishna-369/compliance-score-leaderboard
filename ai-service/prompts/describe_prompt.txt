@@ -1,0 +1,17 @@
+You will be given a short compliance-related record. Produce a concise description suitable for a UI "AI Description" panel.
+
+Return ONLY JSON in this exact shape:
+{
+  "title": "string",
+  "summary": "string",
+  "key_risks": ["string", "string", "string"]
+}
+
+Rules:
+- Keep "summary" under 60 words.
+- "key_risks" must have exactly 3 items.
+- Do not include markdown, explanations, or extra fields.
+
+Record:
+{{INPUT}}
+

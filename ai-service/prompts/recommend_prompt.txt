@@ -1,0 +1,17 @@
+You will be given a compliance-related record. Provide exactly 3 actionable recommendations.
+
+Return ONLY JSON in this exact shape:
+[
+  {"action_type": "string", "description": "string", "priority": "LOW|MEDIUM|HIGH"},
+  {"action_type": "string", "description": "string", "priority": "LOW|MEDIUM|HIGH"},
+  {"action_type": "string", "description": "string", "priority": "LOW|MEDIUM|HIGH"}
+]
+
+Rules:
+- Exactly 3 items.
+- Each description must be a concrete action, <= 25 words.
+- No markdown, no extra keys, no prose outside JSON.
+
+Record:
+{{INPUT}}
+
